@@ -36,8 +36,6 @@ House Greyjoy's sigil is traditionally a golden kraken on a black field. Their h
   ["Tyrell", `House Tyrell of Highgarden is one of the Great Houses of the Seven Kingdoms, being Lords Paramount of the Mander and the liege lords of the Reach. A large, wealthy house, its wealth is only surpassed among the Great Houses by House Lannister, and the Tyrells can field the greatest armies`]
     ]
 
-
-
     function animateBanners() {
 
         // this is to clear the previous video(if there is an video which wait to play)
@@ -56,8 +54,7 @@ House Greyjoy's sigil is traditionally a golden kraken on a black field. Their h
 
         // popup video for each banner image
         let multiplier2 = this.className.split(" ")[1];
-        popLightBox(multiplier2);
-        
+        popLightBox(multiplier2);   
     }
 
     function showHouseData(targetIndex) {
@@ -100,10 +97,9 @@ House Greyjoy's sigil is traditionally a golden kraken on a black field. Their h
         lBox.classList.remove('show-lightbox');
     }
 
-
     sigils.forEach(sigil => sigil.addEventListener("click", animateBanners));
 
-    // we dont need anymore. I call popLightBox function in the  animateBanners func.
+    // we dont need it anymore. I call popLightBox function in the  animateBanners func.
     //sigils.forEach(sigil => sigil.addEventListener("click", popLightBox));
 
     lbClose.addEventListener("click", closeLightBox);
